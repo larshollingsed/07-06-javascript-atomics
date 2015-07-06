@@ -1,0 +1,24 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 06C</title>
+
+  <script type="text/javascript" src="global6c.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 06C</h1>
+  
+  <h3>If you collect the user's input as a string (i.e. without using parseInt() to turn it into an integer), does == work to compare the input to the stored secret number? Would === work? Which is best?</h3>
+  <p>== does work because it will look past the fact that the user input is a string and just check to see if the content of the string equals the secret number (which is stored in a variable as an integer).  Without using parseInt() === would not work because it would be trying to compare a string to an integer, which would never result in true.  Altho using === with parseInt() or == seem about equal to me (in this specific context), if the user put in a non-integer, that would result in that variable being set to NaN which maybe cause trouble or may be useful.  It doesn't seem to be a falsy anywhere but who knows.</p>
+  
+  <h3>If you collect the user's input as an integer (i.e. by using parseInt() to turn it into an integer), can you use == to compare? ===? Which is better in this case?</h3>
+  <p>You can use both to compare and they should work exactly the same.  You are comparing two expressions of the same type so the difference between == and === is nullified.  Please correct me if I'm wrong.</p>
+  
+  <h3>What is the difference between == and ===?</h3>
+  <p>=== requires that both expressions be of the same type and content.  == requires that they only be of the same content.</p>
+  
+  <h3>In this case, does it make more sense to leave the user's guess as a string, or to convert it to an integer? Why? What are the relative advantages / disadvantages of each approach (particularly in terms of the types of new features that might be able to be added)?</h3>
+  <p>If we try to parseInt() a non-integer, we are returned NaN which we could possibly use in the future to inform the user that they need to input a number.  In this specific case I see both options as equals until we add more complexity into the context.</p>
+  
+</body>
+</html>
