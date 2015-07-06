@@ -1,0 +1,33 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 04</title>
+  <!-- Include your external Javascript file here -->
+  <script type="text/javascript" src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 04</h1>
+  
+  <h3>What is the data-type (e.g. string or integer) of the information that comes in? What happens if the user inputs a number -- does it stay an integer? Use typeof and console.log() to help with this.</h3>
+  <p>Things that come in via prompt() can be anything the user can create with their keyboard.  They are converted to strings.</p>
+  
+  <h3>What happens if the user clicks "OK" (or equivalent) without typing anything in? What information gets assigned to a variable, if any?</h3>
+  <p>Unless there is default text in the prompt() window, the variable ends up being an empty string.</p>
+  
+  <h3>How did you choose your variable names? If you gave a list of variable names to someone who hasn't seen your code, could they reasonably predict what information you might store in each?</h3>
+  <p>I chose my variable names to reflect what I expected the user to input based on the dialogue in the prompt().  Ideally, the variable names I chose are descriptive enough to give an unfamiliar person an idea of what I was hoping my variables to store.</p>
+  
+  <h3>If you completely changed a question you were asking the user, would it make sense to totally rename the variable? What if you changed the order of your questions?</h3>
+  <p>If I changed the question I was asking the user I would probably want to change the variable name to reflect how I expected the user to interpet the new dialogue.  Changing the order of my questions, as long as the variable name matched up with the question it was created for, shouldn't affect anything besides the order in which the user recieves the prompt() pop-ups. </p>
+  
+  <h3>In these exercises, we use prompt() to collect information, but most websites do that ask for information do not use prompt() -- how do they collect information (what HTML elements do they use)? What might be an advantage to doing it that way instead of with prompt()? Are there any disadvantages? Why might you use prompt()?</h3>
+  <p>I assume most websites use a form to collect information from the user directly.  With a form you can collect multiple pieces of information (in various formats e.g. typeable fields and a set of checkboxes).  The advantage to this is that you can get all of the information from the user in one fell swoop.  A disadvantage to using a form may be that the user can accidentally skip parts of the form without noticing, whereas a pop-up from prompt() needs to be dealt with before the rest of the page can be interacted with.  I can imagine a situation where using prompt() right as the user loads the page to generate specific parts of that page is necessary.</p>
+  
+  <h3>Research prompt() -- is there any way to make it so that there are two (or more) fields?</h3>
+  <p>From a glance at google it seems that having multiple fields in one prompt() is not a built in possibility.  That said, there are some ducttape solutions on stackoverflow that seem a little over my head.</p>
+  
+  <h3>What questions do you have?</h3>
+  <p>Is there a "lite" version of Javascript that uses some sort of "decaf" pun?</p>
+  
+</body>
+</html>
