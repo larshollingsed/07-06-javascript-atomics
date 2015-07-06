@@ -1,0 +1,24 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 06D</title>
+
+  <script type="text/javascript" src="global6d.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 06D</h1>
+  
+  <h3>Does it matter what order your if-statements are in?</h3>
+  <p>Yes, it determines the order of the alert() pop-ups.</p>
+  
+  <h3>When testing ranges, did you use &&, ||, or something else entirely (e.g. nested if-statements)? If you used &&, why is that a better choice than || (and vice-versa)?</h3>
+  <p>I did use && for the 0-15 range.  Because I wanted a certain if statement to happen if they were over 0 AND under 15, the && was the best choice.  If I had been looking for two different things (like isNaN() || age < 0) then the OR would have allowed me tell the user something like "your input is either not a number or is a negative number".</p>
+  
+  <h3>What types of input produce a value of NaN after parsing? Is it important to check for NaN values? Is it possible for a NaN value to trigger any of the other if-statements? If so, how and why?</h3>
+  <p>parseInt() seems to round down any numerical input.  Using non-numeric characters, alone or in addition to numeric characters results in a return of NaN.  It is important to check for NaN in case the user is typing "twenty" instead of "20".  I have not found a way for a NaN value to trigger any of the other if-statements.</p>
+  
+  <h3>What questions do you have?</h3>
+  <p></p>
+  
+</body>
+</html>
