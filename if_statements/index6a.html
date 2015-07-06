@@ -1,0 +1,52 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 06</title>
+
+  <script type="text/javascript" src="global6a.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 06</h1>
+  <p>My guesses are shown to the right following the "//"</p>
+  <h4>console.log( "5 == '5' is " + (5 == '5') ); //true</h4>
+  
+  <h4>console.log( "5 == 'five' is " + (5 == 'five') ); //false</h4>
+  
+  <h4>console.log( "5 == '6' is " + (5 == '6') ); //false</h4>
+  
+  <h4>console.log( "5 === '5' is " + (5 === '5') ); //false</h4>
+  
+  <h4>console.log( "5 == 2 + 3 is " + (5 == 2 + 3) ); //true</h4>
+  
+  <h4>console.log( "5 == 5 is " + (5 == 5) ); //true</h4>
+  
+  <h4>console.log( "5 === 5 is " + (5 === 5) ); //true</h4>
+  
+  <h4>console.log( "true == 'true' is " + (true == 'true') ); //true</h4>
+  
+  <h4>console.log( "true === 'true' is " + (true === 'true') ); //false</h4>
+  
+  <h4>console.log( "true == false is " + (true == false) ); //false</h4>
+  
+  <h4>console.log( "5 == 12 is " + (5 == 12) ); //false</h4>
+  
+  <h4>console.log( "5 !== 12 is " + (5 != 12) ); //true</h4>
+  
+  <h4>console.log( "5 < 12 is " + (5 < 12) ); //true</h4>
+  
+  <h4>console.log( "5 <= 12 is " + (5 <= 12) ); //true</h4>
+  
+  <h4>console.log( "5 > 12 is " + (5 > 12)); //false</h4>
+  
+  <h4>console.log( "5 >= 12 is " + (5 >= 12)); //false</h4>
+  
+  <p>Before checking the console window, I googled and came to understand that while "==" and "===" act similar in many respects as far as determining equality, the "==" take it upon itself to look past discrepency in the types of the things it is comparing.  The same cannot be said for "===".  So the integer 5 == the string five is true but the integer 5 === the string 5(or any other string or non-5 integer) is false.  "!==" does not try to coerce a type change but "!=" DOES.  So while one might assume that "5 != '5' " would evaluate to true, it actually evaluates to false (because the != operator disregards the type and there for both operands are the same and the expression is false).  Slipppppperrryyyy slope y'all. </p>
+  
+  <h3>What do you call true and false values?</h3>
+  <p>Without googling and just trying various things, I have found 0 (as an integer but not a string), false, null, and empty string to all be falsies.  I suppose everything else is true.  Let's google and find out.  Looks like all the ones I discovered plus [] and " " (whitespace) are false in terms of "==".  However, the only thing that is "===" equal to false is false.  </p>
+  
+  <h3>How is true similar or dissimilar from "true"? Can they be used in the same way?</h3>
+  <p>' true == "true" ' is true but ' true === "true" ' is false.  Let that sink in.  The best way I've seen it summarized online is that == is a loose equality whereas === is a strict equality.  Only something that is the exact same characters will evaluate as true for "===".  </p>
+  
+</body>
+</html>
