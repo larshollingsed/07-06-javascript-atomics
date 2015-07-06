@@ -6,6 +6,8 @@ if (isNaN(side1) == true || isNaN(side2) == true || isNaN(side3) == true) {
   alert("At least one of your entries was not a valid number")
 } else if (side1 == 0 || side2 == 0 || side3 == 0){
   alert("Are you sure you meant to enter 0?")
+} else if (side1 < 0 || side2 < 0 || side3 < 0) {
+  alert("Sides of a triangle can't be negative...at least in this universe")  
 } else if (side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1) {
   alert("This is a valid triangle")
 } else {
