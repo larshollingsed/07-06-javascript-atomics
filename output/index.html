@@ -1,0 +1,32 @@
+<!doctype HTML>
+<html>
+  <head>
+    <title>JS Atomic 02</title>
+    <!-- Include your external Javascript file here -->
+    <script type="text/javascript" src="global.js"></script>
+  </head>
+  <body>
+    <h1>JS Atomic 02</h1>
+  
+    <h2>What's the difference between alert() and console.log()?</h2>
+    <p>Alert() causes a window to pop up displaying text while console.log() displays its argument in the console window of the browser</p>
+  
+    <h2>What's one situation where you might use an `alert()` to tell the user something?</h2>
+    <p>If there is something a user needs to know in order to use the page effectively, an alert() popping up a window with that necessary information when the page is loaded could be useful.</p>
+  
+    <h2>What's one way that `alert()` might get obnoxious?</h2>
+    <p>More than two or three separate alert() windows popping up before you can even get to the page's actual content would be pretty frustrating.</p>
+  
+    <h2>Would it make sense to use console.log() to tell the user things? Why or why not?</h2>
+    <p>I don't think it would make much sense to use console.log() to tell the user things.  It seems to be opt-in only in a browser (by requiring the user to open the console) whereas most people using a site wouldn't think to look there.</p>
+    
+    <h2>What's one way that console.log() might be a good tool for you to use?</h2>
+    <p>It seems to be implemented for developers so information specific to the behind the scenes stuff can be passed to the console for only the people who know how to/want to look there to find instead of burdening the average user with such things.</p>
+    
+    <h2>When do the console.log() statements get run? Is it before the first alert() gets displayed? After it gets displayed but before the user clicks "OK" (or equivalent)? After the user clicks to close the dialog box? A different time? How did you find out for sure?</h2>
+    <p>The console.log() statements were ran immediately after the "ok" button was clicked on the first alert.  I noticed that when the first alert dialog box popped up, the console was empty, but after clicking "ok" the console displayed the statements.</p>
+    
+    <h2>What questions do you have?</h2>
+    <p>In my googlings (yes, that's a word) I noticed people making reference to customized console.log() outputs for certain portions/errors in their code.  This seems interesting and something that I shall keep in mind to ask about if it doesn't come up with further introduction into Javascript.</p>
+  </body>
+</html>
