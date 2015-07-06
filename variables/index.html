@@ -1,0 +1,30 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 03</title>
+  <!-- Include your external Javascript file here -->
+  <script type="text/javascript" src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 03</h1>
+  
+  <h3>Given what you know so far, what are some reasons to use variables?</h3>
+  <p>They provide the ability to plug in a string or integer that has been previously defined into an argument for alert() or console.log() using concatenation.</p>
+  
+  <h3>What are some advantages to variable names like hairColor instead of hc (for example)? What are some disadvantages?</h3>
+  <p>hairColor is quite a bit more descriptive; "hc" could refer to "hair of the cat" or "horizontal creases" whereas hairColor gives a better idea of what the variable is storing.  In general I have noticed that more descriptive variable names seem to be a win-win except when you have to worry about typing a five word long string separated by underscores multiple times, allowing for the possibility of human error.</p>
+  
+  <h3>Given what you know so far, what can you predict about other ways we might use variables?</h3>
+  <p>I bet we will use variables to store input from the user or perform mathematical manipulations.</p>
+  
+  <h3>Why don't you need to use the var keyword every time you use a variable (right now, we only use it when we create the variable)? What does var do?</h3>
+  <p>"var" seems to be used only when setting (or changing) a variable, not when accessing it.  It could be seen as a "setter" method while just using the variable name is a "reader" method.</p>
+  
+  <h3>What happens if you try to do output with a variable without first assigning a value to that variable? What happens? Does the program still work as intended? Do error messages show up in the console? If so, what error message?</h3>
+  <p>If a variable without a value assigned to it, the code works up to that point (starting from the top) and then produces a "Uncaught ReferenceError: hairColorz is not defined" error in the console.  </p>
+  
+  <h3>What questions do you have?</h3>
+  <p>I am curious to see what sorts of things we can store in a variable.  Storing arrays or objects in a Ruby variable has proven very useful and I am wondering if Javascript is as versatile.</p>
+  
+</body>
+</html>
