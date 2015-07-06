@@ -1,0 +1,22 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 06E</title>
+
+  <script type="text/javascript" src="global6e.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 06E</h1>
+  
+  
+  <h3>Does it matter what order your if / else if statements happen? If you reorder them, does your program still produce correct output?</h3>
+  <p>Since I left my conditions open ended ("age >= 16") then yes, the order does matter.  If I had created more specific conditions ("age >= 16 && age < 25") then the order wouldn't matter.</p>
+  
+  <h3>What's wrong with this conditional: if (age < 16 && age > 21)?</h3>
+  <p>There isn't a value for "age" that would cause that condition to be true.</p>
+  
+  <h3>Let's say that your program needs to be easy to modify so that it works in parts of the country/world where the age ranges are different. How would you replace the numbers in your if statements with variables to make the program make sense? Or is it easier to just have the numbers be there? Does it matter?</h3>
+  <p>I would set the variables at the top; for example "var rental_age = 25" for each of the various milestones.  Keeping the < 0 and isNaN() conditions makes sense but the other ages are subject to the laws of the principality this is being applied to.  The only troublesome situation that may arise is if the order of the milestones is different (e.g. the driving age is 16 but the drinking age is 14).  If the order is different that more substantial refactoring would be required, such as changing the order of the if/else if statements.</p>
+  
+</body>
+</html>
