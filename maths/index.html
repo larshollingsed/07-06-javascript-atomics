@@ -1,0 +1,30 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 05</title>
+  <!-- Include your external Javascript file here -->
+  <script type="text/javascript" src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 05</h1>
+  
+  <h3>What happens when you try to parse the integer out of a string like "Error 404"? How about "404 Error"? Other combinations of numbers and letters? What needs to be true about the incoming string for it to be parsed correctly?</h3>
+  <p>If the first character in a string is not an integer, it returns "NaN" meaning "not a number".  If the first character(s) in a string are integers then it returns those as an integer.  If it is something like "123 Error 321" it returns 123 as an integer.</p>
+  
+  <h3>What happens if one (or more) of the inputs are non-numeric text (like a comma or a dollar-sign)? What errors occur, if any? What does the console output tell you?</h3>
+  <p>Non-numeric text acts like an alphabet character - depending on its placement it returns an integer up to the point where non-numeric characters are encountered or returns NaN if it is at the beginning.</p>
+  
+  <h3>Why might you use the increment (++) or decrement (--) operators? What are some applications that you predict might come into play?</h3>
+  <p>Using increment adds one to a variable and modifies the variable to reflect that.  Situations where looping through something and incrementing by one each time (like keeping track of rounds of a game) would be a good use of increment.</p>
+  
+  <h3>What questions do you have?</h3>
+  <p>I understand the difference between putting the increment/decrement before/after the value (the order in which it is changed before or after evaluating the expression) but am not sure when I would apply each.</p>
+  
+  <h3>Learn about the compound assignment operators (like += and -=) -- what problem do these solve and how are they used? What are situations where you might use a compound assignment operator instead of simple assignment (with =)? Which is easier to read: x += 2; or x = x + 2;?</h3>
+  <p>"result (operation)= expression"</p>
+  <p>performs the following operation: result = result (operation) expression.  It accomplishes the same thing but with less characters.  Although the expanded version may be easier to read off the bat, I already find myself comfortable with reading the compound version the same internally.  Situations where this may be helpful would be when we are trying to increment/decrement by something other than one (i.e. every third number is important).</p>
+  
+  <h3>Research the Javascript Math Object -- can you get some of these methods to work? I'll recommend Math.pow(), Math.max(), and Math.abs() as starting points.</h3>
+  <p>These seem to be some more advanced mathematical functions than basic arithmetic.  Math.abs(x) returns the absolute value of x, Math.power(x, y) raises x to the y power, Math.max(x, y, z, a ...) returns the greatest item out of all the arguments.  Math.random() is interesting because it returns a random number between 0 and 1.  Further use of methods (such as * 10, Math.ceil/Math.floor) in addition to some conditional operations (if return is > 6 reroll - in case of trying to roll a six-sided die) could be useful.</p>
+</body>
+</html>
